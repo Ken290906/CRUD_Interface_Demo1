@@ -95,7 +95,7 @@
             <ul class="pagination justify-content-center">
                 <!-- Nút Previous -->
                 <li class="page-item ${currentPage.number == 0 ? 'disabled' : ''}">
-                    <a class="page-link" href="?page=${currentPage.number - 1}&searchInput=${searchInput != null ? searchInput : ''}">Previous</a>
+                    <a class="page-link" href="?page=${currentPage.number - 1}&keyword=${searchInput != null ? searchInput : ''}">Previous</a>
                 </li>
 
                 <!-- Các trang -->
@@ -107,7 +107,7 @@
 
                 <!-- Nút Next -->
                 <li class="page-item ${currentPage.number + 1 == currentPage.totalPages ? 'disabled' : ''}">
-                    <a class="page-link" href="?page=${currentPage.number + 1}&searchInput=${searchInput != null ? searchInput : ''}">Next</a>
+                    <a class="page-link" href="?page=${currentPage.number + 1}&keyword=${searchInput != null ? searchInput : ''}">Next</a>
                 </li>
             </ul>
         </nav>
